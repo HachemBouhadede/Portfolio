@@ -25,3 +25,15 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.custom-img {
+  position: relative !important;
+}
+
+.unset-img {
+  width: 100%;
+}
+
+.unset-img > div {
+  position: unset !important;
+}
