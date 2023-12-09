@@ -61,7 +61,7 @@ function AboutMe() {
           Contact Me Via Email
         </ScrollLink>{" "}
         or 
-        {" "}<Link href="https://www.linkedin.com/in/hachem-bouhadede/">LinkedIn !</Link>
+        {" "}<Link href="https://www.linkedin.com/in/hachem-bouhadede/" passHref target="_blank">LinkedIn !</Link>
         
       </div>
     </div>
