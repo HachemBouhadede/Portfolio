@@ -1,19 +1,26 @@
 import React from "react";
 import Timeline from "./Timeline";
+import { motion } from "framer-motion";
+
 
 import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 
 function AboutMe() {
+
+  const container = {
+    hidden: {opacity:0},
+    visible: {opacity: 1},
+  }
   return (
     <div className="bg-base-100">
-      <h1 className="flex justify-center items-center rounded-sm bg-gray-900 text-3xl p-2 w-1/3 mx-auto">
+      <h1 className="flex justify-center items-center rounded-sm bg-gray-900 text-3xl p-2 mx-auto">
         Who Am i{" "}
       </h1>
-      <p className="p-2 mr-10">
+      <p className="p-2 mr-10 animate-fade-down animate-once animate-ease-in">
         {" "}
         Hello, I&apos;m{" "}
-        <span className="text-yellow-500 font-bold">Hachem Bouhadede</span> or
+        <span className="text-yellow-500 font-bold ">Hachem Bouhadede</span> or
         you can call me <span className="text-yellow-500 ">Timeless</span>, a
         passionate web developer.
         <br />

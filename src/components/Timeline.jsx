@@ -4,7 +4,7 @@ function Timeline() {
   return (
     <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         {/* birth */}
-      <li>
+      <li className="animate-fade-down animate-once animate-ease-in-out animate-delay-1000">
         <div className="timeline-middle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@ function Timeline() {
         <hr />
       </li>
       {/* HS */}
-      <li>
+      <li className="animate-fade-down animate-once animate-ease-in-out animate-delay-1000">
         <hr />
         <div className="timeline-middle">
           <svg
@@ -49,7 +49,7 @@ function Timeline() {
         <hr />
       </li>
       {/* License */}
-      <li>
+      <li className="animate-fade-down animate-once animate-ease-in-out animate-delay-1000">
         <hr />
         <div className="timeline-middle">
           <svg
@@ -74,7 +74,7 @@ function Timeline() {
         <hr />
       </li>
       {/* Masters */}
-      <li>
+      <li className="animate-fade-down animate-once animate-ease-in-out animate-delay-1000">
         <hr />
         <div className="timeline-middle">
           <svg
@@ -99,7 +99,7 @@ function Timeline() {
         <hr />
       </li>
       {/* AUIC */}
-      <li>
+      <li className="animate-fade-down animate-once animate-ease-in-out animate-delay-1000">
         <hr />
         <div className="timeline-middle">
           <svg
@@ -124,7 +124,7 @@ function Timeline() {
         <hr />
       </li>
       {/* Recoded */}
-      <li>
+      <li className="animate-fade-down animate-once animate-ease-in-out animate-delay-1000">
         <hr />
         <div className="timeline-middle">
           <svg
@@ -149,7 +149,7 @@ function Timeline() {
         <hr />
       </li>
       {/* Recoded */}
-      <li>
+      <li className="animate-fade-down animate-once animate-ease-in-out animate-delay-1000">
         <hr />
         <div className="timeline-middle">
           <svg

@@ -5,7 +5,6 @@ function Footer() {
   const handleEmailClick = () => {
     const email = "hachembouhadede@gmail.com";
     navigator.clipboard.writeText(email);
-    // You may also want to provide some visual feedback to the user, like a tooltip or notification.
     alert(`Email "${email}" copied to clipboard!`);
   };
   return (
@@ -14,7 +13,7 @@ function Footer() {
         <p>
           Hachem<span className="italic"> &quot;Timeless&quot; </span>Bouhadede.
           <br />
-          Providing reliable tech
+          Turning Ideas into Digital Marvels
         </p>
       </aside>
       <nav>

@@ -5,8 +5,8 @@ import { Link as ScrollLink } from 'react-scroll';
 
 function HeroSection() {
   return (
-    <div className="hero min-h-80vh bg-base-100">
-      <div className="hero-content flex-col lg:flex-row-reverse">
+    <div className="hero min-h-[100vh] bg-base-100">
+      <div className="hero-content flex-col lg:flex-row-reverse animate-fade-left animate-once animate-ease-linear animate-normal animate-fill-forwards">
         <Image
           src={HeroImage}
           className="max-w-sm "

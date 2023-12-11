@@ -18,11 +18,11 @@ function ProjectCard({ projectId }) {
 
   // Check if projectData is null before accessing its properties
   if (!projectData) {
-    return <span className="loading loading-spinner loading-md"></span>; // You can replace this with a loading indicator
+    return <span className="skeleton w-[90%] h-32"></span>; // You can replace this with a loading indicator
   }
 
   return (
-    <div className="card card-side bg-base-300 shadow-xl m-2 px-2">
+    <div className="card card-side flex-col md:flex-row bg-base-300 shadow-xl m-2 px-2">
       <figure>
         <img src={projectData.imageUrl} alt={projectData.title} />
       </figure>

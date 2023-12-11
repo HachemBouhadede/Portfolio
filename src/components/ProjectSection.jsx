@@ -1,4 +1,3 @@
-// ProjectSection.js
 import React, { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import { getProjectIds, getReviewstIds, getTechtIds } from "@/lib/collections";
@@ -39,11 +38,14 @@ function ProjectSection() {
 
   return (
     <div className="bg-base-100 py-2">
-      <div className="flex justify-center items-center rounded-sm bg-gray-900 text-3xl p-2 w-1/3 mx-auto">
+      <div className="flex justify-center items-center rounded-sm bg-gray-900 text-3xl p-2 mx-auto">
         About my work
       </div>
-      <h2 className='flex justify-left items-center text-2xl p-2 mx-5 underline'> Projects: </h2>
-      <div className="mx-5">
+      <h2 className="flex justify-left items-center text-2xl p-2 mx-5 underline">
+        {" "}
+        Projects:{" "}
+      </h2>
+      <div className="mx-5 animate-rotate-x animate-once" >
         {projectIds.slice(0, displayedProjects).map((id) => (
           <ProjectCard key={id} projectId={id} />
         ))}
@@ -53,17 +55,23 @@ function ProjectSection() {
           </button>
         )}
       </div>
-      <h2 className='flex justify-left items-center text-2xl p-2 mx-5 underline'> TechStack: </h2>
-      <div className="bg-neutral rounded-box mx-5">
-        <div className="carousel carousel-center p-4 space-x-4 justify-center items-center">
+      <h2 className="flex justify-left items-center text-2xl p-2 mx-5 underline">
+        {" "}
+        TechStack:{" "}
+      </h2>
+      <div className="flex bg-neutral rounded-box mx-5 overflow-hidden">
+        <div className="flex flex-wrap p-4 space-x-4 justify-center items-center">
           {techIds.map((id) => (
-            <div key={id} className="carousel-item">
+            <div key={id} className="animate-fade-left animate-duration-[5000ms] animate-delay-[5000ms] animate-ease-in animate-normal animate-fill-forwards">
               <TechStack tech={id} />
             </div>
           ))}
         </div>
       </div>
-      <h2 className='flex justify-left items-center text-2xl p-2 mx-5 underline'> Hear from Collaboratos and Clients: </h2>
+      <h2 className="flex justify-left items-center text-2xl p-2 mx-5 underline">
+        {" "}
+        Hear from Collaboratos and Clients:{" "}
+      </h2>
       <div className="bg-neutral rounded-box mx-5">
         <div className="carousel carousel-center p-4 space-x-4 justify-center items-center">
           {reviewIds.map((id) => (
@@ -76,9 +84,9 @@ function ProjectSection() {
           Enjoyed our collaboration ? Feeling satified with my services ?
           <label
             htmlFor="my_modal_6"
-            className="btn btn-outline btn-success w-2/12 m-2"
+            className="btn btn-outline btn-disabled w-2/12 m-2"
           >
-            Share Your Feedback
+            Share Your Feedback (Soon)
           </label>
         </div>
         <input type="checkbox" id="my_modal_6" className="modal-toggle" />
