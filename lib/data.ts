@@ -73,7 +73,7 @@ export const projectsData = [
   {
     title: "Portfolio",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "My Portfolio was my first solo production product, building gave me the chance to apply my knoledge in typeScript and learn framar motion in real time",
     tags: ["React", "Next.js", "TypeScript", "Tailwind", "Framer"],
     imageUrl: MyPortfolio,
   },
