@@ -39,7 +39,7 @@ export const experiencesData = [
       "Electronic Engnineering Bachlor Degree & Instrumentation Engineering Masters Degree",
     location: "Mentouri Brothers University, Constantine",
     description:
-      "Build and apply a foundation in Algorythems, Logic and Electronic",
+      "Build and apply a foundation in Algorythems, Logic and Electronics",
     icon: React.createElement(LuGraduationCap),
     date: "Sep 2017 - July 2022",
   },
@@ -76,26 +76,23 @@ export const projectsData = [
       "My Portfolio was my first solo production product, building gave me the chance to apply my knoledge in typeScript and learn framar motion in real time",
     tags: ["React", "Next.js", "TypeScript", "Tailwind", "Framer"],
     imageUrl: MyPortfolio,
+    websiteURL : "/"
   },
   {
-    title: "AideBeAide - Re:Coded Boot Camp Capstone Project",
+    title: "AideBeAide",
     description:
-      "Aide Be Aide, is a dedicated platform for community engagement and meaningful impact. where Volunteering and Initiativity are key, the website has Simple & Freindly Interface | Find, Join & Save Volunteering Events Feature | Create, Edit, and Comment on Events ! | See what other user are participating in and their interests",
-    tags: [
-      "React",
-      ,
-      "Next.js",
-      "Tailwind",
-      "i18Internalization, Firebase (Authentification, AppCheck, Store and Storage)",
-    ],
+      "A dedicated platform for community engagement and meaningful impact. Creating and Participating in Volunteering is the main focus of the community",
+    tags: ["React", , "Next.js", "Tailwind", "i18next", "Firebase"],
     imageUrl: AideBeAide,
+    websiteURL : "https://aidebeaide.vercel.app/"
   },
   {
     title: "CNChill",
     description:
-      "C&Chill, is a website that holds double meaning, Code&Chill, and C ( 👀) and chill ! and as you guessed it's a movie liberary website, showcases all the latest and old movies, with rating, genres and actors ! great for plaaning what you'd like to watch next !",
+      "It's a movie liberary website, showcases , using the TMDb API to fetch movies, genres and actors ! and allows search and filtering accordingly",
     tags: ["React", "Next.js", "Tailwind"],
     imageUrl: CNChill,
+    websiteURL : "https://cnchill.netlify.app/"
   },
   {
     title: "AmaZD.",
@@ -103,6 +100,7 @@ export const projectsData = [
       "E-Commerce Demo Website, includes features like search, category, pricing and rating filters...etc, Annonymous checkout and shopcart",
     tags: ["React", "Next.js", "Tailwind"],
     imageUrl: AmaZD,
+    websiteURL : "https://e-commerce-project-amazon.vercel.app/"
   },
 ] as const;
 
@@ -117,4 +115,5 @@ export const skillsData = [
   "Tailwind",
   "Framer Motion",
   "Firebase",
+  "i18next"
 ] as const;
